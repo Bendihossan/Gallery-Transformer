@@ -3,28 +3,31 @@
  *	Contact: contact@steffanharries.com
  */
  
-ul.gallery li {
+ul.gallery li { 
+	/* Basic style for a image list */
  	float: left;
  	margin:  2em;
  	padding: 10px;
  	border: 1px solid #ddd;
  	list-style: none;
 }
-ul.gallery li a img {
+ul.gallery li a img { 
+	/* Float the list left and srhink the width */
 	float: left;
 	width: 200px;
+	
+	/* Set the transition speed and type */
+	-webkit-transition: -webkit-transform 0.2s ease-in-out;
+	-moz-transition: -moz-transform 0.2s ease-in-out;
+	transition: transform 0.2s ease-in-out;
 }
-ul.gallery li a:hover img {
-	-webkit-transform-origin: center center;
-	-moz-transform-origin: center center;
-	-o-transform-origin: center center;
-	transform-origin: center center;
-
+ul.gallery li a:hover img { 
+	/* Transform the images on hover to 1.5x scale */
 	-webkit-transform: scale(1.5);
 	-moz-transform: scale(1.5);
 	-o-transform: scale(1.5);
 	transform: scale(1.5);
-	
+	/* Add a nice border shadow */
 	-webkit-box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
 	-moz-box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
 	box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
